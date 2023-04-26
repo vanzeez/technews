@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: linear-gradient(45deg, #cccbcb , #6b6b6b, #585858);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+header {
+  color: #fff;
+  height: 80px;
+}
+h1.tech-news-heading {
+  font-size: 32px;
+  text-align: center;
+  margin-left: -1000px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+.article {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 1px white (0, 0, 0, 0.2);
+  overflow: hidden;
+  width: calc(40% - 20px);
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 30px ;
+}
+.article:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  }
+.article:hover {
+  background: linear-gradient(to bottom right, #dddddd, rgb(185, 185, 185));
+}
+.article:last-child {
+  margin-bottom: 0;
+}
+.thumbnail {
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+.thumbnail img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.content {
+  padding: 20px;
+}
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+a {
+  background-color: blueviolet;
+  border-radius: 5px;
+  color: #fff;
+  display: block;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+}
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+a:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+.browse-more {
+  background-color: blueviolet;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  display: block;
+  font-family: 'Sans Berlin FB', sans-serif;
+  font-size: 16px;
+  margin: 30px auto 0;
+  padding: 10px 20px;
+}
+.browse-more:hover {
+  background-color: grey;
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.article-description {
+  background-color: rgb(133, 133, 133);
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+}
